@@ -8,7 +8,7 @@
 clear
 clear
 [[ "$(whoami)" != "root" ]] && {
-echo -e "\033[1;33m[\033[1;31mErro\033[1;33m] \033[1;37m- \033[1;33mvocê precisa executar como root\033[0m"
+echo -e "\033[1;33m[\033[1;31mError\033[1;33m] \033[1;37m- \033[1;33mAnda harus menjalankan sebagai root\033[0m"
 rm $HOME/instgerador.sh* > /dev/null 2>&1; exit 0
 }
 barra="\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -24,7 +24,7 @@ ${comando[1]} -y > /dev/null 2>&1
 touch $HOME/fim
  ) > /dev/null 2>&1 &
  tput civis
-echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+echo -ne "  \033[1;33mMEMEGANG \033[1;37m- \033[1;33m["
 while true; do
    for((i=0; i<18; i++)); do
    echo -ne "\033[1;31m#"
@@ -35,7 +35,7 @@ while true; do
    sleep 1s
    tput cuu1
    tput dl1
-   echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+   echo -ne "  \033[1;33mMEMEGANG \033[1;37m- \033[1;33m["
 done
 echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
@@ -132,38 +132,38 @@ cat /home/index.html >/var/www/html/scripts/index.html
 
 clear
 echo -e "$barra"
-echo -e "       \033[1;33mINSTALADOR KEY SSHPLUS MANAGER !\033[0m"
+echo -e "       \033[1;33mINSTALLER KUNCI SSHPLUS MANAJER !\033[0m"
 echo -e "$barra"
 echo ""
-read -p "$(echo -e "\033[1;36mDESEJA CONTINUAR \033[1;31m? \033[1;33m[S/N]:\033[1;37m ")" -e -i s resp
+read -p "$(echo -e "\033[1;36mAPAKAH ANDA INGIN LANJUTKAN? \033[1;31m? \033[1;33m[S/N]:\033[1;37m ")" -e -i s resp
 [[ $resp = @(n|N) ]] && rm $HOME/instgerador.sh* && exit 0
 echo
 tput cuu1 && tput dl1
 tput cuu1 && tput dl1
-echo -e "\033[1;36mATUALIZANDO REPOSITÓRIOS..... \033[1;32mAGUARDE"
+echo -e "\033[1;36mMEMPERBARUI REPOSITORY...... \033[1;32mAGUARDE"
 fun_bar 'fun_attrepo'
-echo -e "\033[1;36mINSTALANDO RECURSOS.......... \033[1;32mAGUARDE"
+echo -e "\033[1;36mMENGINSTAL FITUR........... \033[1;32mAGUARDE"
 fun_bar 'fun_instrec'
-echo -e "\033[1;36mCONFIGURANDO APACHE.......... \033[1;32mAGUARDE"
+echo -e "\033[1;36mMENYIAPKAN APACHE............ \033[1;32mAGUARDE"
 fun_bar 'fun_apalist'
-echo -e "\033[1;36mPREPARANDO SISTEMA........... \033[1;32mAGUARDE"
+echo -e "\033[1;36mPERSIAPAN SISTEM............ \033[1;32mAGUARDE"
 fun_bar 'fun_preparasis'
 echo -e "\033[1;36mDONWLOAD SERVER.............. \033[1;32mAGUARDE"
 fun_bar 'fun_downser'
-echo -e "\033[1;36mINSTALANDO SISTEMA........... \033[1;32mAGUARDE"
+echo -e "\033[1;36mMENGINSTAL SISTEM............ \033[1;32mAGUARDE"
 fun_bar 'fun_instsis'
-echo -e "\033[1;36mPERMISOS ARQUIVOS............ \033[1;32mAGUARDE"
+echo -e "\033[1;36mIZIN FILE ............... \033[1;32mAGUARDE"
 fun_bar 'fun_permisoarq'
-echo -e "\033[1;36mMONTANDO O SEU LINK-IP....... \033[1;32mAGUARDE"
+echo -e "\033[1;36mMERAKIT LINK-IP ANDA ....... \033[1;32mAGUARDE"
 fun_bar 'fun_montaip'
-echo -e "\033[1;36mFINALIZANDO CONFIGURACION.... \033[1;32mAGUARDE"
+echo -e "\033[1;36mKONFIGURASI SELESAI.... \033[1;32mAGUARDE"
 fun_bar 'fun_finconf'
 echo -e "$barra"
 ## echo -e " \033[1;36m> \033[1;37mPerfeito, Use o Comando \033[1;31mkeyssh / key "
 ## echo -e " \033[1;36m> \033[1;37mPara Gerenciar as Suas Keys e "
 ## echo -e " \033[1;36m> \033[1;37mAtualizar a Base do Servidor "
-echo -e "\033[1;31m\033[1;33mCOMANDO PRINCIPAL: \033[1;32mkeyssh o key \033[0m"
-echo -e "\033[1;33mMAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[0m"
+echo -e "\033[1;31m\033[1;33mPERINTAH UTAMA: \033[1;32mkey keyssh \033[0m"
+echo -e "\033[1;33mINFORMASI LEBIH LANJUT \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[0m"
 echo -e "                     \033[1;37m@AAAAAEXQOSyIpN2JZ0ehUQ\033[0m"
 echo -e "$barra"
 rm $HOME/instgerador.sh* && cat /dev/null > ~/.bash_history && history -c
