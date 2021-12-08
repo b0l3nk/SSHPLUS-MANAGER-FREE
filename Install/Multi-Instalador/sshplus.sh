@@ -11,7 +11,7 @@ ${comando[1]} > /dev/null 2>&1
 touch $HOME/fim
  ) > /dev/null 2>&1 &
  tput civis
-echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+echo -ne "  \033[1;33mMEMEGANG \033[1;37m- \033[1;33m["
 while true; do
    for((i=0; i<18; i++)); do
    echo -ne "\033[1;31m#"
@@ -22,7 +22,7 @@ while true; do
    sleep 1s
    tput cuu1
    tput dl1
-   echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+   echo -ne "  \033[1;33mMEMEGANG \033[1;37m- \033[1;33m["
 done
 echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
@@ -82,7 +82,7 @@ fun_att () {
 }
 fun_bar 'fun_att'
 echo ""
-echo -e "\033[1;33m UPDATE COM SUCESSO -\033[1;32m OK !\033[1;37m"
+echo -e "\033[1;33m UPDATE SUKSES -\033[1;32m OK !\033[1;37m"
 sleep 4s
 chmod +x sshplus.sh; ./sshplus.sh
 }
@@ -96,26 +96,26 @@ _usor=$(printf '%-8s' "$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2 }')")
 _usop=$(printf '%-1s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37mMULTI-INSTALADOR PLUS             \033[1;32m[\033[1;37m VERSAO: r021 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37mMULTI-INSTALLER PLUS             \033[1;32m[\033[1;37m VERSAO: r021 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo ""
 echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;33mSSHPLUS MANAGER FREE           \033[1;32m(FREE) \033[37m∆ "
 echo -e "\033[1;31m[\033[1;36m02\033[1;31m] \033[1;33mSSHPLUS MANAGER OFICIAL-DEV    \033[1;32m(FREE) "
 echo -e "\033[1;31m[\033[1;36m03\033[1;31m] \033[1;33mSSHPLUS MANAGER OFICIAL        \033[1;31m(KEYS) "
-echo -e "\033[1;31m[\033[1;36m04\033[1;31m] \033[1;33mPAINEL SSHPLUS WEB V.20        \033[1;32m(FREE) "
-echo -e "\033[1;31m[\033[1;36m05\033[1;31m] \033[1;33mPAINEL VIP-VPS WEB V.23        \033[1;32m(FREE) "
-echo -e "\033[1;31m[\033[1;36m06\033[1;31m] \033[1;33mPAINEL VIP-VPS WEB V.25        \033[1;32m(FREE) "
+echo -e "\033[1;31m[\033[1;36m04\033[1;31m] \033[1;33mPANEL SSHPLUS WEB V.20        \033[1;32m(FREE) "
+echo -e "\033[1;31m[\033[1;36m05\033[1;31m] \033[1;33mPANEL VIP-VPS WEB V.23        \033[1;32m(FREE) "
+echo -e "\033[1;31m[\033[1;36m06\033[1;31m] \033[1;33mPANEL VIP-VPS WEB V.25        \033[1;32m(FREE) "
 echo -e "\033[1;31m[\033[1;36m07\033[1;31m] \033[1;33mUPDATE VIP-VPS V.23 PARA V25   \033[1;32m(FREE) "
-echo -e "\033[1;31m[\033[1;36m08\033[1;31m] \033[1;33mPAINEL REVENDA SSH (VERSIONES) \033[1;32m(FREE) "
+echo -e "\033[1;31m[\033[1;36m08\033[1;31m] \033[1;33mPANEL REVENDA SSH (VERSIONES) \033[1;32m(FREE) "
 echo -e "\033[1;31m[\033[1;36m09\033[1;31m] \033[1;33mGENERADOR KEY SSHPLUS MANAGER  \033[1;32m(FREE) "
 echo -e "\033[1;31m[\033[1;36m10\033[1;31m] \033[1;33mTCP-TWEAKER-1.0 (TCP-SPEED)    \033[1;32m(FREE) " 
-echo -e "\033[1;31m[\033[1;36m11\033[1;31m] \033[1;35m[!] \033[1;32mACTUALIZAR                \033[1;31mRam:\033[1;37m $_usor "
-echo -e "\033[1;31m[\033[1;36m12\033[1;31m] \033[1;35m[!] \033[1;31mDESINSTALAR \033[1;35m[\033[1;37m MIP \033[1;35m]       \033[1;31mNucleo:\033[1;37m $_usop "
-echo -e "\033[1;31m[\033[1;36m00\033[1;31m] \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m< \033[0m"
+echo -e "\033[1;31m[\033[1;36m11\033[1;31m] \033[1;35m[!] \033[1;32mMEMPERBARUI                \033[1;31mRam:\033[1;37m $_usor "
+echo -e "\033[1;31m[\033[1;36m12\033[1;31m] \033[1;35m[!] \033[1;31mUNINSTALL \033[1;35m[\033[1;37m MIP \033[1;35m]       \033[1;31mNucleo:\033[1;37m $_usop "
+echo -e "\033[1;31m[\033[1;36m00\033[1;31m] \033[1;37mKELUAR \033[1;32m<\033[1;33m<\033[1;31m< \033[0m"
 echo -e "                           \033[1;37m@AAAAAEXQOSyIpN2JZ0ehUQ\033[0m \033[0m"
 echo -e "$barra"
 echo ""
-echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read x
+echo -ne "\033[1;32mAPA YANG INGIN KAMU LAKUKAN \033[1;33m?\033[1;31m?\033[1;37m : "; read x
 
 case "$x" in 
 1 | 01)
@@ -179,13 +179,13 @@ remove_multiscripts
 exit;
 ;;
 0 | 00)
-echo -e "\033[1;31mSaindo...\033[0m"
+echo -e "\033[1;31mkeluar...\033[0m"
 sleep 2
 clear
 exit;
 ;;
 *)
-echo -e "\n\033[1;31mOpcao invalida !\033[0m"
+echo -e "\n\033[1;31mOpsi tidak valid !\033[0m"
 esac
 done
 }
